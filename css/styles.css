@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: .1em;
+  /* Mustard */
+  color: #EBBC4E;
+  /* Grey */
+  background-color: #36454f;
+  background-image:
+    url("../img/BLACK_I_phone-2.jpg");
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 30px;
+}
+
+.logo {
+  max-height: 80px;
+}
+
+.buttons {
+  font-size: 18px;
+  color: #EBBC4E;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 3px solid #EBBC4E;
+  border-radius: 5px;
+}
+
+.bx-download {
+  margin-left: 10px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 200px 20px 0 20px;
+  width: 90%;
+  height: 300px;
+}
+
+.banner > h1 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.banner > p {
+  line-height: 1.4em;
+}
+
+.contact-button {
+  padding: 15px;
+  max-width: 50%;
+}
+
+.skills-section {
+
+}
