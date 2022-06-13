@@ -43,7 +43,8 @@ nav {
   margin-left: 10px;
 }
 
-.banner {
+section,
+.bars {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,7 +59,7 @@ nav {
   font-size: 60px;
 }
 
-.banner > p {
+section > p {
   line-height: 1.4em;
 }
 
@@ -67,6 +68,6 @@ nav {
   max-width: 50%;
 }
 
-.skills-section {
+.bars {
 
 }
