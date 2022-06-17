@@ -43,17 +43,16 @@ nav {
   margin-left: 10px;
 }
 
-section,
-.bars {
+section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 200px 20px 0 20px;
   width: 90%;
-  height: 300px;
+  height: 325px;
 }
 
-.banner > h1 {
+section > h1 {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: bold;
   font-size: 60px;
@@ -68,6 +67,29 @@ section > p {
   max-width: 50%;
 }
 
-.bars {
+section.skills {
+  height: 650px;
+}
 
+.bars {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.bars > label {
+  font-family: "Merriweather Sans", Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.bars > progress {
+  font-size: 35px;
+}
+
+.bars > progress, label {
+  margin-bottom: 20px;
 }
