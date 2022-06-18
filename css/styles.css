@@ -19,6 +19,11 @@ body {
     url("../img/BLACK_I_phone-2.jpg");
 }
 
+h1, h2, h3 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -39,7 +44,8 @@ nav {
   border-radius: 5px;
 }
 
-.bx-download {
+/* Curriculum button style */
+i.bx-download {
   margin-left: 10px;
 }
 
@@ -47,15 +53,16 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 200px 20px 0 20px;
-  width: 80%;
-  height: 325px;
+  margin: 20px auto;
+  width: 90%;
 }
 
 section > h1 {
-  font-family: "Merriweather Sans", sans-serif;
-  font-weight: bold;
   font-size: 60px;
+}
+
+section > h2 {
+  font-size: 40px;
 }
 
 section > p {
@@ -65,6 +72,11 @@ section > p {
 .contact-button {
   padding: 15px;
   max-width: 50%;
+}
+
+section.banner {
+  margin-top: 200px;
+  height: 400px;
 }
 
 section.skills {
@@ -125,4 +137,20 @@ section.skills {
 
 .bars > label, .progress {
   margin-bottom: 20px;
+}
+
+section.about {
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+.my-photo {
+  float: left;
+  height: 200px;
+  width: 200px;
+  background-image: url("../img/propic.jpg");
+  background-size: 200px;
+  background-repeat: no-repeat;
+  border-radius: 0.30rem;
+  box-shadow: inset 1px 2px 4px 3px rgba(11, 11, 11, 0.5);
 }
