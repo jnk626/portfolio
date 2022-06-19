@@ -7,20 +7,22 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
   letter-spacing: .1em;
-  /* Mustard */
-  color: #EBBC4E;
-  /* Grey */
-  background-color: #36454f;
+  color: #EBBC4E; /* Mustard */
+  background-color: #36454f; /* Grey */
   background-image:
-    url("../img/BLACK_I_phone-2.jpg");
+    linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)),
+    url("../img/black-shapes-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 h1, h2, h3 {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -53,7 +55,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 20px auto;
+  margin: 200px auto;
   width: 90%;
 }
 
@@ -75,7 +77,6 @@ section > p {
 }
 
 section.banner {
-  margin-top: 200px;
   height: 400px;
 }
 
@@ -140,17 +141,29 @@ section.skills {
 }
 
 section.about {
-  height: 500px;
+  height: 600px;
   margin-bottom: 50px;
 }
 
+.my-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+}
+
 .my-photo {
-  float: left;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   background-image: url("../img/propic.jpg");
-  background-size: 200px;
+  background-size: 300px;
   background-repeat: no-repeat;
   border-radius: 0.30rem;
-  box-shadow: inset 1px 2px 4px 3px rgba(11, 11, 11, 0.5);
+  box-shadow: 1px 2px 4px 3px rgba(11, 11, 11, 0.5);
+}
+
+.my-container > p {
+  text-align: center;
+  width: 80%;
 }
