@@ -156,3 +156,23 @@ section.about {
   border-radius: 0.30rem;
   box-shadow: 1px 2px 4px 3px rgba(11, 11, 11, 0.5);
 }
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: #111;
+}
+
+footer > i {
+  font-size: 40px;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+footer > p {
+  text-align: center;
+  font-size: 0.8em;
+}
