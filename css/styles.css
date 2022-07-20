@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
   letter-spacing: .1em;
@@ -24,6 +24,18 @@ body {
 h1, h2, h3 {
   font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
   font-weight: 700;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  line-height: 1.4em;
 }
 
 nav {
@@ -56,19 +68,8 @@ section {
   flex-direction: column;
   justify-content: space-between;
   margin: 200px auto;
+  height: 600px;
   width: 90%;
-}
-
-section > h1 {
-  font-size: 60px;
-}
-
-section > h2 {
-  font-size: 40px;
-}
-
-section > p {
-  line-height: 1.4em;
 }
 
 .contact-button {
@@ -77,22 +78,23 @@ section > p {
 }
 
 section.banner {
-  height: 400px;
+  margin-top: 100px;
+  height: 425px;
 }
 
-section.skills {
-  height: 650px;
+section.skills > p {
+  margin-top: 20px;
 }
 
-.bars {
-  padding-top: 20px;
+div.bars {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.bars > label {
+div.bars > label {
   font-family: "Merriweather Sans", Arial, sans-serif;
   font-size: 25px;
   font-weight: bold;
@@ -136,34 +138,21 @@ section.skills {
 
 /* Bootstrap progress bars - end */
 
-.bars > label, .progress {
+div.bars > label, .progress {
   margin-bottom: 20px;
 }
 
 section.about {
-  height: 600px;
   margin-bottom: 50px;
-}
-
-.my-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 500px;
 }
 
 .my-photo {
   height: 300px;
   width: 300px;
+  margin: 20px 0;
   background-image: url("../img/propic.jpg");
   background-size: 300px;
   background-repeat: no-repeat;
   border-radius: 0.30rem;
   box-shadow: 1px 2px 4px 3px rgba(11, 11, 11, 0.5);
-}
-
-.my-container > p {
-  text-align: center;
-  width: 80%;
 }
