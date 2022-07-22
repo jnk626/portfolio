@@ -7,7 +7,10 @@
 }
 
 body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   font-size: 18px;
   letter-spacing: .1em;
@@ -23,7 +26,10 @@ body {
 
 h1, h2, h3 {
   font-size: 60px;
-  font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   text-shadow: 2px 2px #111;
 }
@@ -45,6 +51,16 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 30px 30px;
+}
+
+a {
+  font-size: 18px;
+  color: #EBBC4E;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
 }
 
 .logo {
@@ -85,7 +101,7 @@ section.banner {
   height: 425px;
 }
 
-section.skills > p {
+section.skills p {
   margin-top: 20px;
 }
 
@@ -97,7 +113,7 @@ div.bars {
   justify-content: space-around;
 }
 
-div.bars > label {
+div.bars label {
   font-family: "Merriweather Sans", Arial, sans-serif;
   font-size: 25px;
   font-weight: bold;
@@ -165,7 +181,7 @@ section.final-cta {
   margin-bottom: 100px;
 }
 
-section.final-cta > * {
+section.final-cta * {
   text-align: center;
   margin-top: 20px;
 }
@@ -177,7 +193,7 @@ footer {
   background-color: #111;
 }
 
-footer > i {
+footer i {
   font-size: 40px;
 }
 
@@ -185,7 +201,7 @@ i:hover {
   cursor: pointer;
 }
 
-footer > p {
+footer p {
   text-align: center;
   font-size: 0.8em;
 }
