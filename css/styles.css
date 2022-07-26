@@ -215,3 +215,12 @@ footer p {
   text-align: center;
   font-size: 0.8em;
 }
+
+
+@media only screen and (min-width: 961px) {
+  section {
+    margin: 50px auto;
+    width: 50%;
+  }
+  
+}
