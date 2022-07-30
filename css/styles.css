@@ -198,13 +198,18 @@ section.final-cta * {
 }
 
 footer {
-  display: flex;
-  justify-content: space-evenly;
+  /* display: flex;
+  justify-content: space-evenly; */
   padding: 20px;
   background-color: #111;
 }
 
-footer i {
+div.footer-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.footer-row i {
   font-size: 40px;
 }
 
@@ -212,7 +217,7 @@ i:hover {
   cursor: pointer;
 }
 
-footer p {
+div.footer-row p {
   text-align: center;
   font-size: 0.8em;
 }
@@ -232,8 +237,8 @@ footer p {
   }
   
   section {
-    margin: 50px auto;
-    width: 50%;
+    margin: 100px auto;
+    width: 80%;
   }
 
   section.banner {
@@ -252,6 +257,31 @@ footer p {
 
   section.banner h1 {
     font-size: 80px;
+  }
+
+  section.about {
+    height: 400px;
+  }
+
+  .about-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-row p {
+    width: 70%;
+  }
+
+  section.final-cta {
+    width: 60%;
+  }
+
+  .footer-row {
+    margin: auto;
+    width: 30%;
+    justify-content: space-between;
   }
   
 }
