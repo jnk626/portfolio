@@ -248,6 +248,7 @@ div.footer-row p {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    border-radius: 10px;
   }
 
   section.banner * {
