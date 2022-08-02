@@ -15,13 +15,13 @@ body {
   font-size: 18px;
   letter-spacing: .1em;
   color: #EBBC4E; /* Mustard */
+  
   background-color: #36454f; /* Grey */
   background-image:
     linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)),
     url("../img/black-shapes-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 h1, h2, h3 {
@@ -71,11 +71,14 @@ a:hover, a:active {
 .buttons {
   font-size: 18px;
   color: #EBBC4E;
+  
   padding: 10px 15px;
+  
   background-color: transparent;
   border: 3px solid #EBBC4E;
   border-radius: 5px;
   box-shadow: 2px 2px #111;
+  
   transition-property: margin-left, background-color, box-shadow;
   transition-duration: 500ms;
 }
@@ -97,6 +100,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   margin: 200px auto;
   height: 600px;
   width: 90%;
@@ -112,12 +116,26 @@ section.banner {
   height: 425px;
 }
 
+div.my-photo {
+  height: 300px;
+  width: 300px;
+  margin: 20px 0;
+
+  background-image: url("../img/propic.jpg");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  
+  border-radius: 0.30rem;
+  box-shadow: 1px 2px 4px 3px rgba(11, 11, 11, 0.5);
+}
+
 section.skills p {
   margin-top: 20px;
 }
 
 div.bars {
   margin-top: 20px;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -165,7 +183,6 @@ div.bars label {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 1rem 1rem;
 }
-
 /* Bootstrap progress bars - end */
 
 div.bars > label, .progress {
@@ -174,17 +191,6 @@ div.bars > label, .progress {
 
 section.about {
   margin-bottom: 50px;
-}
-
-.my-photo {
-  height: 300px;
-  width: 300px;
-  margin: 20px 0;
-  background-image: url("../img/propic.jpg");
-  background-size: 300px;
-  background-repeat: no-repeat;
-  border-radius: 0.30rem;
-  box-shadow: 1px 2px 4px 3px rgba(11, 11, 11, 0.5);
 }
 
 section.final-cta {
