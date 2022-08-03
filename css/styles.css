@@ -70,6 +70,7 @@ a:hover, a:active {
 
 .buttons {
   font-size: 18px;
+  letter-spacing: .1em;
   color: #EBBC4E;
   
   padding: 10px 15px;
@@ -129,7 +130,7 @@ div.my-photo {
   box-shadow: 1px 2px 4px 3px rgba(11, 11, 11, 0.5);
 }
 
-section.skills p {
+p#skills-description {
   margin-top: 20px;
 }
 
@@ -244,7 +245,7 @@ div.footer-row p {
   
   section {
     margin: 100px auto;
-    width: 80%;
+    width: 60%;
   }
 
   section.banner {
@@ -259,11 +260,17 @@ div.footer-row p {
 
   section.banner * {
     text-align: center;
-    margin: 10px 0;
+    
   }
 
   section.banner h1 {
     font-size: 80px;
+  }
+
+  p#subtitle {
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+    line-height: 1.8em;
   }
 
   section.about {
@@ -277,8 +284,8 @@ div.footer-row p {
     justify-content: space-between;
   }
 
-  .about-row p {
-    width: 70%;
+  p#self-description {
+    width: 60%;
   }
 
   section.final-cta {
