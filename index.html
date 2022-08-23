@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500;700&display=swap" rel="stylesheet">
@@ -13,26 +13,26 @@
   <title>Gabriele Rigano - Portfolio</title>
 </head>
 
-<body>
+<body class="font-paragraphs-fonts text-lg text-yellow-400 font-light tracking-widest bg-no-repeat bg-cover">
   <header>
-    <nav>
-      <div class="logo-container">
-        <img src="img/logo-vector.svg" alt="logo" class="logo" />
+    <nav class="flex flex-wrap items-center justify-between m-8">
+      <div class="max-h-20">
+        <img src="img/logo-vector.svg" alt="logo" />
       </div>
-      <div class="button-container"><button type="button" name="resume" class="buttons curriculum-button"><a href="https://www.canva.com/design/DAFHKbZ15FI/nr5Ks-fXaYZ3JiZelDSY1Q/view?utm_content=DAFHKbZ15FI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">Curriculum</a><i class='bx bx-download'></a></i></button></div>
+      <a href="" class="buttons"><i class='bx bx-download'></i>Curriculum</a>
     </nav>
 
-    <section class="banner">
-      <h1>Hi there!<br>I'm Gabriele</h1>
-      <p id="subtitle"><span style="color: white;">Web Developer<br>Creative Thinker<br>Problem Solver<br></span><strong>Human</strong></p>
-      <button type="button" name="CTA" class="buttons contact-button"><a href="mailto:gabriele.rigano626@gmail.com">Contact me</a></button>
+    <section class="sections">
+      <h1 class="text-6xl font-bold drop-shadow-sm shadow-gray-900 font-titles-fonts">Hi there!<br>I'm Gabriele</h1>
+      <p class="paragraphs" id="subtitle"><span style="color: white;">Web Developer<br>Creative Thinker<br>Problem Solver<br></span><strong>Human</strong></p>
+      <a href="" class="buttons">Contact me</a>
     </section>
   </header>
-  <section class="about">
-    <h2>>whoami</h2>
+  <section class="sections">
+    <h2 class="titles text-4xl">>whoami</h2>
     <div class="about-row">
-      <div class="my-photo"></div>
-      <p id="self-description">
+      <img src="img/propic.jpg" class="h-72 w-72 my-5 bg-no-repeat rounded shadow-md">
+      <p id="paragraphs">
         This is me. A human being made up of merits and flaws.
         <br>I don't easily give up in front of complex situations.
         <br>I try to think about every possibile outcome, so my projects will withstand the test of time.
@@ -40,14 +40,14 @@
       </p>
     </div>
   </section>
-  <section class="skills">
-    <h2>>skills</h2>
-    <p id="skills-description">
+  <section class="sections">
+    <h2 class="titles text-4xl">>skills</h2>
+    <p id="paragraphs">
       These are just a few of the technologies that i've learned so far. 
       And I'm willing to expand this list further, so feel free to check my progress from time to time. 
       You may find something new ;) 
     </p>
-    <div class="bars">
+    <!-- <div class="bars">
       <label for="first-bar">HTML</label>
       <div class="progress">
         <div class="progress-bar progress-bar-striped first-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -68,22 +68,11 @@
       <div class="progress">
         <div class="progress-bar progress-bar-striped fifth-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
-    </div>
-  </section>
-  <section class="updates">
-    <h2>>loading...</h2>
-    <div class="updates-row">
-      <i class='bx bxl-vuejs' ></i>
-      <i class='bx bxl-php' ></i>
-      <i class='bx bxl-nodejs' ></i>
-    </div>
-  </section>
-  <section class="final-cta">
-    <h3>Interested in a collaboration? I'd love to hear about you and your ideas! You can contact me throught the links below.</h3>
+    </div> -->
   </section>
     
-  <footer>
-    <div class="footer-row">
+  <footer class="p-5 bg-zinc-900">
+    <div class="flex justify-evenly">
       <a href="https://www.linkedin.com/in/gabriele-rigano/"><i class='bx bxl-linkedin-square'></i></a>
       <a href="mailto:gabriele.rigano626@gmail.com"><i class='bx bx-envelope'></i></a>
       <p>Designed &amp; Crafted<br>by Gabriele Rigano.</p>
