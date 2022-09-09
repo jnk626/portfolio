@@ -16,10 +16,21 @@
 <body>
   <main class="m-0 font-paragraphs-fonts text-lg text-yellow-400 font-light tracking-widest bg-[url('../img/black-shapes-bg.png')] bg-no-repeat bg-cover">
     <header>
-      <nav class="flex flex-wrap items-center justify-between p-8">
-        <img src="img/logo-vector.svg" alt="logo" class="max-h-20" />
-        <i class='bx bx-menu text-6xl fixed top-8 right-4'></i>
-      </nav>
+      <div class="navbar p-8">
+        <div class="flex-1">
+            <img src="img/logo-vector.svg" alt="logo" class="max-h-14" />
+        </div>
+        <div class="flex-none dropdown dropdown-left">
+            <button class="btn btn-lg btn-square btn-ghost btn-primary text-6xl">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+              </button>
+            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Curriculum</a></li>
+                <li><a>Contacts</a></li>
+              </ul>
+        </div>
+    </div>
+
 
       <section class="sections">
         <h1 class="text-6xl font-bold drop-shadow-sm shadow-gray-900 font-titles-fonts">Hi there!<br>I'm Gabriele</h1>
