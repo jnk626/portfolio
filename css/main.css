@@ -1578,19 +1578,26 @@ html {
   padding: 0px;
 }
 
-.avatar.online:before {
-  content: "";
-  position: absolute;
+.my-nav {
+  display: flex;
+  align-items: center;
+  padding: var(--navbar-padding, 0.5rem);
+  min-height: 4rem;
+  width: 100%;
+}
+
+:where(.my-nav > *) {
+  display: inline-flex;
+  align-items: center;
+}
+
+.my-nav {
+  position: fixed;
+  top: 0px;
   z-index: 10;
-  display: block;
-  border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: hsl(var(--su) / var(--tw-bg-opacity));
-  width: 15%;
-  height: 15%;
-  top: 7%;
-  right: 7%;
-  box-shadow: 0 0 0 2px hsl(var(--b1));
+  background-color: hsl(var(--b1) / var(--tw-bg-opacity));
+  padding: 1.25rem;
 }
 
 .titles {
@@ -1609,8 +1616,8 @@ html {
 }
 
 .sections {
-  margin-top: 9rem;
-  margin-bottom: 9rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   margin-left: 1.25rem;
   display: flex;
   height: -webkit-fit-content;
@@ -1652,6 +1659,18 @@ html {
     */
 }
 
+.fixed {
+  position: fixed;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .row-auto {
   grid-row: auto;
 }
@@ -1670,9 +1689,9 @@ html {
   margin-bottom: 2.5rem;
 }
 
-.my-36 {
-  margin-top: 9rem;
-  margin-bottom: 9rem;
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .mt-5 {
@@ -1717,6 +1736,10 @@ html {
   height: fit-content;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .max-h-14 {
   max-height: 3.5rem;
 }
@@ -1757,6 +1780,10 @@ html {
 
 .grid-flow-row {
   grid-auto-flow: row;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1823,6 +1850,21 @@ html {
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 138 4 / var(--tw-bg-opacity));
+}
+
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\.\/img\/black-shapes-bg\.png\'\)\] {
   background-image: url('../img/black-shapes-bg.png');
 }
@@ -1839,10 +1881,6 @@ html {
   stroke: currentColor;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -1853,6 +1891,14 @@ html {
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-center {

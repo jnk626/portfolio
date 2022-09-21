@@ -20,7 +20,9 @@ module.exports = {
   content: [
     './**/*.{html, js}',
     './index.html',
-    './css/styles.css'
+    './css/styles.css',
+    '.css/nav.css',
+    './css/grid.css'
   ],
   theme: {
     fontFamily: {

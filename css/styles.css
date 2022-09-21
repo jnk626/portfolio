@@ -4,6 +4,10 @@
 
 @layer components {
 
+  .my-nav {
+    @apply navbar fixed top-0 bg-base-100 p-5 z-10;
+  }
+
   .titles {
     @apply drop-shadow-sm shadow-gray-900 font-titles-fonts;
   }
@@ -13,7 +17,7 @@
   }
 
   .sections {
-    @apply flex flex-col justify-between h-fit w-9/12 my-36 ml-5;
+    @apply flex flex-col justify-between h-fit w-9/12 my-24 ml-5;
   }
 
   .buttons {
