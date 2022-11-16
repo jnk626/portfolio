@@ -14,22 +14,35 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="logo-container">
+  <nav class="sidebar">
+    <header>
+      <div class="logo-text">
         <img src="img/logo-vector.svg" alt="logo" class="logo" />
+        <span class="text name">Gabriele Rigano</span>
+        <span class="text profession">Web Developer</span>
       </div>
-      <div class="button-container"><button type="button" name="resume" class="buttons curriculum-button"><a href="https://www.canva.com/design/DAFHKbZ15FI/nr5Ks-fXaYZ3JiZelDSY1Q/view?utm_content=DAFHKbZ15FI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">Curriculum</a><i class='bx bx-download'></a></i></button></div>
-    </nav>
+    </header>
 
+    <div class="menu-bar">
+      <ul class="menu-links">
+        <li class="nav-links"><a href=""><span></span></a></li>
+        <li class="nav-links"><a href=""><span></span></a></li>
+        <li class="nav-links"><a href=""><span></span></a></li>
+        <li class="nav-links"><a href=""><span></span></a></li>
+        <li class="nav-links"><a href=""><span></span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+<main style="overflow: hidden;">
     <section class="banner">
-      <h1>Hi there!<br>I'm Gabriele</h1>
+      <h1 class="titles title1">Hi there!<br>I'm Gabriele</h1>
       <p id="subtitle"><span style="color: white;">Web Developer<br>Creative Thinker<br>Problem Solver<br></span><strong>Human</strong></p>
       <button type="button" name="CTA" class="buttons contact-button"><a href="mailto:gabriele.rigano626@gmail.com">Contact me</a></button>
     </section>
-  </header>
+
   <section class="about">
-    <h2>>whoami</h2>
+    <h2 class="titles title2">>whoami</h2>
     <div class="about-row">
       <div class="my-photo"></div>
       <p id="self-description">
@@ -41,7 +54,7 @@
     </div>
   </section>
   <section class="skills">
-    <h2>>skills</h2>
+    <h2 class="titles title3">>skills</h2>
     <p id="skills-description">
       These are just a few of the technologies that i've learned so far. 
       And I'm willing to expand this list further, so feel free to check my progress from time to time. 
@@ -70,16 +83,7 @@
       </div>
     </div>
   </section>
-  <section class="updates">
-    <h2>>loading...</h2>
-    <div class="updates-row">
-      <i class='bx bxl-vuejs' ></i>
-      <i class='bx bxl-php' ></i>
-      <i class='bx bxl-nodejs' ></i>
-    </div>
-  </section>
   <section class="final-cta">
-    <h3>Interested in a collaboration? I'd love to hear about you and your ideas! You can contact me throught the links below.</h3>
   </section>
     
   <footer>
@@ -90,6 +94,7 @@
     </div>
     
   </footer>
+</main>
 
 
 </body>
