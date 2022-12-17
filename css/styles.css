@@ -142,6 +142,8 @@ section {
   max-height: 6rem;
   min-width: 2rem;
   justify-self: start;
+
+  cursor: pointer;
 }
 
 .sidebar header .logo-text .name {
@@ -440,6 +442,14 @@ main.closed {
 
 footer i {
   font-size: 30px;
+  color: var(--off-text);
+  cursor: pointer;
+}
+
+footer i:hover,
+i:focus,
+i:active {
+  color: var(--main-color);
 }
 
 /* Media Queries */
