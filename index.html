@@ -1,377 +1,548 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta property="og:title" content="Gabriele Rigano | WebDev" />
+    <meta property="og:description" content="My personal portfolio. Enjoy!" />
+    <meta
+      property="og:image"
+      content="https://github.com/jnk626/portfolio/img/logo-vector.svg"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/bulma-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Gabriele Rigano - Portfolio</title>
+    <link rel="shortcut icon" href="img/logo-vector.svg" type="image/x-icon" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      defer
+    ></script>
+    <script>
+      (function () {
+        // public key
+        emailjs.init("psYEtewdrdop7hGev");
+      })();
+    </script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:title" content="Gabriele Rigano | WebDev">
-  <meta property="og:description" content="My personal portfolio. Enjoy!">
-  <meta property="og:image" content="https://github.com/jnk626/portfolio/img/logo-vector.svg">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/bulma-styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <title>Gabriele Rigano - Portfolio</title>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script>
-        (function() {
-            // public key
-            emailjs.init('psYEtewdrdop7hGev');
-        })();
-  </script>
-</head>
+  <body>
+    <nav id="sidebar" class="sidebar">
+      <header>
+        <div id="logo-text" class="logo-text">
+          <img src="img/logo-vector.svg" alt="logo" class="logo" />
+          <span class="my-titles name">Gabriele Rigano</span>
+        </div>
+      </header>
 
-<body>
-  <nav id="sidebar" class="sidebar">
-    <header>
-      <div id="logo-text" class="logo-text">
-        <img src="img/logo-vector.svg" alt="logo" class="logo" />
-        <span class="my-titles name">Gabriele Rigano</span>
+      <div class="menu-bar">
+        <ul class="menu-links">
+          <li class="nav-links">
+            <a href="#about"
+              ><i class="bx bxs-user-circle"></i
+              ><span class="text">Bio</span></a
+            >
+          </li>
+          <li class="nav-links">
+            <a href="#skills"
+              ><i class="bx bxs-book"></i><span class="text">Skills</span></a
+            >
+          </li>
+          <li class="nav-links">
+            <a href="#services"
+              ><i class="bx bxs-bar-chart-alt-2"></i
+              ><span class="text">Servizi</span></a
+            >
+          </li>
+          <li class="nav-links">
+            <a href="#portfolio"
+              ><i class="bx bxs-check-circle"></i
+              ><span class="text">Progetti</span></a
+            >
+          </li>
+          <li class="nav-links">
+            <a href="#contacts"
+              ><i class="bx bxs-conversation"></i
+              ><span class="text">Contatti</span></a
+            >
+          </li>
+        </ul>
+        <span class="nav-links open-button"
+          ><button><i class="bx bxs-chevrons-left"></i></button
+        ></span>
       </div>
-    </header>
+    </nav>
 
-    <div class="menu-bar">
-      <ul class="menu-links">
-        <li class="nav-links"><a href="#about"><i class='bx bxs-user-circle'></i><span class="text">Bio</span></a></li>
-        <li class="nav-links"><a href="#skills"><i class='bx bxs-book'></i><span class="text">Skills</span></a></li>
-        <li class="nav-links"><a href="#services"><i class='bx bxs-bar-chart-alt-2'></i><span class="text">Servizi</span></a></li>
-        <li class="nav-links"><a href="#portfolio"><i class='bx bxs-check-circle'></i><span class="text">Progetti</span></a></li>
-        <li class="nav-links"><a href="#contacts"><i class='bx bxs-conversation'></i><span class="text">Contatti</span></a></li>
-      </ul>
-      <span class="nav-links open-button"><a href="#"><i class='bx bxs-chevrons-left'></i></a></span>
-    </div>
+    <main id="main-content">
+      <section class="banner">
+        <h1 class="my-titles">Salve!<br />Sono Gabriele</h1>
+        <div class="job-titles text">
+          <span>Web Developer</span>
+          <span>Creative Thinker</span>
+          <span>Problem Solver</span>
+          <span style="font-weight: 500; color: var(--main-color)">Human</span>
+        </div>
+        <a href="#contacts" class="my-buttons contact-button"
+          ><span class="text">Scrivimi</span></a
+        >
+      </section>
 
-  </nav>
+      <section class="about">
+        <h2 id="about" class="my-titles">Su di me</h2>
+        <div class="section-content about-content">
+          <figure class="image is-square">
+            <img
+              src="img/propic.jpg"
+              alt="A photo of me, Gabriele"
+              class="my-photo"
+            />
+          </figure>
+          <p class="text">
+            Questo sono io. Un essere umano, fatto di pregi e difetti. Sono uno
+            che non si arrende di fronte alle difficoltà. Cerco di essere
+            previdente, perché i miei progetti resistano alla prova del tempo.
+            In definitiva, ciò che voglio è creare qualcosa di davvero utile per
+            le persone.
+          </p>
+        </div>
+      </section>
 
-  <main id="main-content">
-    <section class="banner">
-      <h1 class="my-titles">Salve!<br>Sono Gabriele</h1>
-      <div class="job-titles text">
-        <span>Web Developer</span>
-        <span>Creative Thinker</span>
-        <span>Problem Solver</span>
-        <span style="font-weight: 500; color: var(--main-color)">Human</span>  
-      </div>
-      <a href="#contacts" class="my-buttons contact-button"><span class="text">Scrivimi</span></a>
-    </section>
-
-    <section class="about">
-      <h2 id="about" class="my-titles">Su di me</h2>
-      <div class="section-content about-content">
-        <figure class="image is-square">
-          <img src="img/propic.jpg" alt="A photo of me, Gabriele" class="my-photo">
-        </figure>
-        <p class="text">
-          Questo sono io. Un essere umano, fatto di pregi e difetti.
-          Sono uno che non si arrende di fronte alle difficoltà.
-          Cerco di essere previdente, perché i miei progetti resistano alla prova del tempo.
-          In definitiva, ciò che voglio è creare qualcosa di davvero utile per le persone.
-        </p>
-      </div>
-    </section>
-
-    <section class="skills">
-      <h2 id="skills" class="my-titles">Skills</h2>
-      <div class="section-content skills-content">
-        <p class="text">
-          Queste sono solo alcune delle tecnologie che utilizzo al momento.
-          La mia intenzione è quella di espandere questa lista ancor di più, quindi sentiti libero di ripassare.
-          Potresti trovare qualosa di nuovo ;) 
-        </p>
+      <section class="skills">
+        <h2 id="skills" class="my-titles">Skills</h2>
+        <div class="section-content skills-content">
+          <p class="text">
+            Queste sono solo alcune delle tecnologie che utilizzo al momento. La
+            mia intenzione è quella di espandere questa lista ancor di più,
+            quindi sentiti libero di ripassare. Potresti trovare qualosa di
+            nuovo ;)
+          </p>
           <div class="bars">
             <label for="first-bar" class="text">HTML5</label>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped first-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div
+                class="progress-bar progress-bar-striped first-bar"
+                role="progressbar"
+                style="width: 90%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
             <label for="second-bar" class="text">CSS3</label>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped second-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div
+                class="progress-bar progress-bar-striped second-bar"
+                role="progressbar"
+                style="width: 75%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
             <label for="third-bar" class="text">Javascript</label>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped third-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div
+                class="progress-bar progress-bar-striped third-bar"
+                role="progressbar"
+                style="width: 50%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
             <label for="fourth-bar" class="text">Wordpress</label>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped fourth-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div
+                class="progress-bar progress-bar-striped fourth-bar"
+                role="progressbar"
+                style="width: 60%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
           </div>
           <div class="bars">
             <label for="fifth-bar" class="text">SEO Copywriting</label>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped fifth-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div
+                class="progress-bar progress-bar-striped fifth-bar"
+                role="progressbar"
+                style="width: 70%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
             <label for="sixth-bar" class="text">Bulma</label>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped sixth-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div
+                class="progress-bar progress-bar-striped sixth-bar"
+                role="progressbar"
+                style="width: 75%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
             <label for="seventh-bar" class="text">Bootstrap</label>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped seventh-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div
+                class="progress-bar progress-bar-striped seventh-bar"
+                role="progressbar"
+                style="width: 90%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
             <label for="eighth-bar" class="text">TailwindCSS</label>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped eighth-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-      </div>  
-    </section>
-
-    <section class="services">
-      <h2 id="services" class="my-titles">Servizi</h2>
-      <div class="section-content services-content">
-        <p id="skills-intro" class="text">
-          Cosa posso fare per te?
-          Diciamo che mi presto a molte cose diverse nel digitale,
-          per cui ho cercato di sintetizzare il tutto qui.
-          Non sono uno a cui piace inscatolare le cose,
-          quindi sono sempre aperto a nuove soluzioni.
-        </p>
-        <div class="card">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <i class='bx bx-desktop'></i>
-              </div>
-              <div class="media-content">
-                <p class="title my-titles is-4">Front-End Development</p>
-              </div>
-            </div>
-        
-            <div class="content">
-              <p class="text">
-                Siti web e interfacce di vario tipo, dal prototipo al codice,
-                con un occhio sempre attento alla UX.
-              </p>
+              <div
+                class="progress-bar progress-bar-striped eighth-bar"
+                role="progressbar"
+                style="width: 50%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="card">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <i class='bx bxs-like'></i>
+      <section class="services">
+        <h2 id="services" class="my-titles">Servizi</h2>
+        <div class="section-content services-content">
+          <p id="skills-intro" class="text">
+            Cosa posso fare per te? Diciamo che mi presto a molte cose diverse
+            nel digitale, per cui ho cercato di sintetizzare il tutto qui. Non
+            sono uno a cui piace inscatolare le cose, quindi sono sempre aperto
+            a nuove soluzioni.
+          </p>
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <i class="bx bx-desktop"></i>
+                </div>
+                <div class="media-content">
+                  <p class="title my-titles is-4">Front-End Development</p>
+                </div>
               </div>
-              <div class="media-content">
-                <p class="title my-titles is-4">Social Media Strategy</p>
+
+              <div class="content">
+                <p class="text">
+                  Siti web e interfacce di vario tipo, dal prototipo al codice,
+                  con un occhio sempre attento alla UX.
+                </p>
               </div>
             </div>
-        
-            <div class="content">
-              <p class="text">
-                Strategie di contenuti per tutti i social media,
-                personalizzate in base al target e ai KPI della tua attività.
-              </p>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <i class="bx bxs-like"></i>
+                </div>
+                <div class="media-content">
+                  <p class="title my-titles is-4">Social Media Strategy</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="text">
+                  Strategie di contenuti per tutti i social media,
+                  personalizzate in base al target e ai KPI della tua attività.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <i class="bx bxs-file"></i>
+                </div>
+                <div class="media-content">
+                  <p class="title my-titles is-4">Content Editing</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="text">
+                  Testi di tutti i tipi: dai post alle descrizioni dei prodotti
+                  su e-commerce fino agli articoli e alle guide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <i class="bx bx-transfer"></i>
+                </div>
+                <div class="media-content">
+                  <p class="title my-titles is-4">Traduzioni</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="text">
+                  Italiano - Inglese e viceversa di testi online e non.
+                </p>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="card">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <i class='bx bxs-file'></i>
+      <section class="portfolio">
+        <h2 id="portfolio" class="my-titles">Progetti</h2>
+        <div class="section-content portfolio-content">
+          <p class="text">
+            I progetti di cui mi sono occupato in passato o di cui mi sto
+            occupando al momento.
+          </p>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img
+                  src="img/razzanelli-homepage-screenshot.png"
+                  alt="Placeholder image"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title has-text-primary is-4">
+                    Razzanelli Hydratite
+                  </p>
+                  <p class="subtitle is-6">Costruzioni</p>
+                </div>
               </div>
-              <div class="media-content">
-                <p class="title my-titles is-4">Content Editing</p>
+
+              <div class="content">
+                <p class="text">
+                  Sito web aggiornato in termini di usabilità e testi. Ho
+                  scritto i testi di diverse schede prodotto e progettato il
+                  layout delle pagine, oltre alla mappa del sito.
+                </p>
+                <a href="#services" class="ext-links">#divi</a>
+                <a href="#services" class="ext-links">#ux</a>
+                <a href="#services" class="ext-links">#sito web</a>
+                <a href="#services" class="ext-links">#testi</a>
+                <br />
+                <time datetime="2021-8-1">Agosto 2021</time>
+                <br />
+                <a
+                  href="https://www.razzanellihydratite.it/"
+                  class="ext-links"
+                  target="_blank"
+                  rel="noopener"
+                  >Vai al sito <i class="bx bx-link-external"></i
+                ></a>
               </div>
             </div>
-        
-            <div class="content">
-              <p class="text">
-                Testi di tutti i tipi: dai post alle descrizioni dei prodotti su e-commerce fino agli articoli e alle guide.
-              </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img
+                  src="img/ducale-homepage-screenshot.png"
+                  alt="ducale-arredamenti-site-screenshot"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title has-text-primary is-4">Ducale Arredamenti</p>
+                  <p class="subtitle is-6">Arredamenti</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="text">
+                  Creato da zero usando un template di Divi, ho progettato
+                  questo sito soprattutto sul versante responsive. Mi sono
+                  occupato anche della traduzione di tutti i testi, inserendo
+                  anche lo switch da una lingua all'altra.
+                </p>
+                <a href="#services" class="ext-links">#traduzioni</a>
+                <a href="#services" class="ext-links">#responsive</a>
+                <a href="#services" class="ext-links">#sito web</a>
+                <br />
+                <time datetime="2021-5-1">Maggio 2021</time>
+                <br />
+                <a
+                  href="https://www.ducalearredamenti.it/"
+                  class="ext-links"
+                  target="_blank"
+                  rel="noopener"
+                  >Vai al sito <i class="bx bx-link-external"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img
+                  src="img/totem-homepage-screenshot.png"
+                  alt="Placeholder image"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title has-text-primary is-4">Totem Informatica</p>
+                  <p class="subtitle is-6">IT Consultant</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="text">
+                  In questo progetto mi sono occupato principalmente del design
+                  delle varie pagine e della SEO per i testi.
+                </p>
+                <a href="#services" class="ext-links">#seo</a>
+                <a href="#services" class="ext-links">#content strategy</a>
+                <br />
+                <time datetime="2021-9-1">Settembre 2021</time>
+                <br />
+                <a
+                  href="https://totem-informatica.it/"
+                  class="ext-links"
+                  target="_blank"
+                  rel="noopener"
+                  >Vai al sito <i class="bx bx-link-external"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <i class='bx bx-transfer'></i>
-              </div>
-              <div class="media-content">
-                <p class="title my-titles is-4">Traduzioni</p>
+      </section>
+
+      <section class="contacts">
+        <h2 id="contacts" class="my-titles">Chiedi pure</h2>
+        <div class="section-content contacts-content">
+          <p class="text">
+            Leggo sempre tutte le mail, quindi chiedimi pure ciò che vuoi, anche
+            soltanto per curiosità e ti risponderò quanto prima.
+          </p>
+          <form id="contact-form">
+            <div class="field">
+              <input type="hidden" name="contact_number" />
+              <label class="label has-text-primary">Nome</label>
+              <div class="control has-icons-left">
+                <input
+                  class="input"
+                  type="text"
+                  name="user_name"
+                  placeholder="Il tuo nome"
+                />
+                <span class="icon is-small is-left">
+                  <i class="bx bxs-user"></i>
+                </span>
               </div>
             </div>
-        
-            <div class="content">
-              <p class="text">
-                Italiano - Inglese e viceversa di testi online e non.
-              </p>
+
+            <div class="field">
+              <label class="label has-text-primary">Email</label>
+              <div class="control has-icons-left has-icons-right">
+                <input
+                  class="input"
+                  type="email"
+                  name="user_email"
+                  placeholder="Email"
+                />
+                <span class="icon is-small is-left">
+                  <i class="bx bxs-envelope"></i>
+                </span>
+              </div>
             </div>
-          </div>
+
+            <div class="field">
+              <label class="label has-text-primary">Argomento</label>
+              <div class="control">
+                <div class="select">
+                  <select name="user_question">
+                    <option>Front-End Development</option>
+                    <option>Social Media Strategy</option>
+                    <option>Content Editing</option>
+                    <option>Traduzioni</option>
+                    <option>Altro</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label has-text-primary">Messaggio</label>
+              <div class="control">
+                <textarea
+                  class="textarea"
+                  name="message"
+                  placeholder="Scrivi qui il tuo messaggio"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <button class="my-buttons">
+                  <span class="text">Invia</span>
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
-      </div>
-    </section>
-
-    <section class="portfolio">
-      <h2 id="portfolio" class="my-titles">Progetti</h2>
-      <div class="section-content portfolio-content">
-        <p class="text">
-          I progetti di cui mi sono occupato in passato o di cui mi sto occupando al momento.
-        </p>
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-16by9">
-              <img src="img/razzanelli-homepage-screenshot.png" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-content">
-                <p class="title has-text-primary is-4">Razzanelli Hydratite</p>
-                <p class="subtitle is-6">Costruzioni</p>
-              </div>
-            </div>
-        
-            <div class="content">
-              <p class="text">
-                Sito web aggiornato in termini di usabilità e testi.
-                Ho scritto i testi di diverse schede prodotto e progettato il layout delle pagine,
-                oltre alla mappa del sito.
-              </p>
-              <a href="#services" class="ext-links">#divi</a> <a href="#services" class="ext-links">#ux</a> <a href="#services" class="ext-links">#sito web</a> <a href="#services" class="ext-links">#testi</a>
-              <br>
-              <time datetime="2021-8-1">Agosto 2021</time>
-              <br>
-              <a href="https://www.razzanellihydratite.it/" class="ext-links">Vai al sito <i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
+      </section>
+      <footer id="footer" class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <a href="https://github.com/jnk626" target="_blank" rel="noopener"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/gabriele-rigano/"
+              target="_blank"
+              rel="noopener"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
+            <br />
+            Realizzato e progettato da Gabriele Rigano. Tutti i diritti sono
+            riservati.
+          </p>
         </div>
-
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-16by9">
-              <img src="img/ducale-homepage-screenshot.png" alt="ducale-arredamenti-site-screenshot">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-content">
-                <p class="title has-text-primary is-4">Ducale Arredamenti</p>
-                <p class="subtitle is-6">Arredamenti</p>
-              </div>
-            </div>
-        
-            <div class="content">
-              <p class="text">
-                Creato da zero usando un template di Divi, ho progettato questo sito soprattutto sul versante responsive.
-                Mi sono occupato anche della traduzione di tutti i testi, inserendo anche lo switch da una lingua all'altra.
-              </p>
-              <a href="#services" class="ext-links">#traduzioni</a> <a href="#services" class="ext-links">#responsive</a> <a href="#services" class="ext-links">#sito web</a>
-              <br>
-              <time datetime="2021-5-1">Maggio 2021</time>
-              <br>
-              <a href="https://www.ducalearredamenti.it/" class="ext-links">Vai al sito <i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-16by9">
-              <img src="img/totem-homepage-screenshot.png" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-content">
-                <p class="title has-text-primary is-4">Totem Informatica</p>
-                <p class="subtitle is-6">IT Consultant</p>
-              </div>
-            </div>
-            
-            <div class="content">
-              <p class="text">
-                In questo progetto mi sono occupato principalmente del design delle varie pagine e della SEO per i testi.
-              </p>
-              <a href="#services" class="ext-links">#seo</a> <a href="#services" class="ext-links">#content strategy</a>
-              <br>
-              <time datetime="2021-9-1">Settembre 2021</time>
-              <br>
-              <a href="https://totem-informatica.it/" class="ext-links">Vai al sito <i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contacts">
-      <h2 id="contacts" class="my-titles">Chiedi pure</h2>
-      <div class="section-content contacts-content">
-        <p class="text">
-          Leggo sempre tutte le mail, quindi chiedimi pure ciò che vuoi, anche soltanto per curiosità e ti risponderò quanto prima.
-        </p>
-        <form id="contact-form">
-          <div class="field">
-            <input type="hidden" name="contact_number">
-            <label class="label has-text-primary">Nome</label>
-            <div class="control has-icons-left">
-              <input class="input" type="text" name="user_name" placeholder="Il tuo nome">
-              <span class="icon is-small is-left">
-                <i class='bx bxs-user'></i>
-              </span>
-            </div>
-          </div>
-          
-          <div class="field">
-            <label class="label has-text-primary">Email</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input" type="email" name="user_email" placeholder="Email">
-              <span class="icon is-small is-left">
-                <i class='bx bxs-envelope'></i>
-              </span>
-            </div>
-          </div>
-          
-          <div class="field">
-            <label class="label has-text-primary">Argomento</label>
-            <div class="control">
-              <div class="select">
-                <select name="user_question">
-                  <option>Front-End Development</option>
-                  <option>Social Media Strategy</option>
-                  <option>Content Editing</option>
-                  <option>Traduzioni</option>
-                  <option>Altro</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          
-          <div class="field">
-            <label class="label has-text-primary">Messaggio</label>
-            <div class="control">
-              <textarea class="textarea" name="message" placeholder="Scrivi qui il tuo messaggio"></textarea>
-            </div>
-          </div>
-          
-          <div class="field">
-            <div class="control">
-              <button class="my-buttons"><span class="text">Invia</span></button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-    <footer id="footer" class="footer">
-      <div class="content has-text-centered">
-        <p>
-          <a href="https://github.com/jnk626"><i class='bx bxl-github'></i></a>
-          <a href="https://www.linkedin.com/in/gabriele-rigano/"><i class='bx bxl-linkedin-square'></i></a>
-          <br>
-          Realizzato e progettato da Gabriele Rigano.
-          Tutti i diritti sono riservati.
-        </p>
-      </div>
-    </footer>
-  </main>
-  <script src="scripts/main.js"></script>
-</body>
-
+      </footer>
+    </main>
+    <script src="scripts/main.js" async></script>
+  </body>
 </html>
