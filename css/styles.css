@@ -10,32 +10,32 @@
 
 :root {
   /* My colors */
-  --main-color: #FACC15;
+  --main-color: #facc15;
   --secondary-color: #713800;
   --body-background: #36454f;
-  --sidebar-background: #2A303C;
-  --off-text: #B3AA99;
+  --sidebar-background: #2a303c;
+  --off-text: #b3aa99;
   --separator-color: #222731;
-  
+
   /* Transitions */
   --trans-01: all ease 500ms;
 
   /* Fonts */
-  --text-fonts: "Lato", -apple-system, BlinkMacSystemFont,
-  "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans",
-  "Droid Sans", "Helvetica Neue", sans-serif;
+  --text-fonts: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   --titles-fonts: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
-  "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans",
-  "Droid Sans", "Helvetica Neue", sans-serif;
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
   background-color: var(--body-background);
-  background-image:
-  linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)),
-  url("../img/black-shapes-bg.png");
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("../img/black-shapes-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -45,7 +45,7 @@ section {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  
+
   margin: 200px 100px;
 }
 
@@ -63,11 +63,10 @@ section {
   font-family: var(--text-fonts);
   font-weight: 300;
   font-size: 18px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   color: var(--main-color);
   line-height: 1.4em;
 }
-
 
 .my-titles {
   color: var(--main-color);
@@ -108,11 +107,11 @@ section {
 }
 
 .sidebar.closed .text {
-  display: none; 
+  display: none;
 }
 
 .sidebar.closed .name {
-  display: none; 
+  display: none;
 }
 
 .sidebar.closed .open-button {
@@ -159,7 +158,7 @@ section {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  
+
   display: flex;
   justify-items: start;
 
@@ -179,7 +178,8 @@ section {
   list-style: none;
 }
 
-.nav-links a {
+.nav-links a,
+.nav-links button {
   font-size: 1.2rem;
 
   display: flex;
@@ -193,16 +193,25 @@ section {
 
   color: var(--off-text);
   text-decoration: none;
+  background-color: transparent;
 
+  border: none;
   border-radius: 5px;
 
   transition: border-color 200ms;
 }
 
-.nav-links > 
-a:hover,
+.nav-links > a:hover,
 a:active,
 a:focus {
+  font-weight: 500;
+  color: var(--sidebar-background);
+  background-color: var(--main-color);
+}
+
+.nav-links > button:hover,
+button:active,
+button:focus {
   font-weight: 500;
   color: var(--sidebar-background);
   background-color: var(--main-color);
@@ -215,14 +224,22 @@ a:focus {
 
 .nav-links .text {
   font-size: 20px;
-
 }
 
 .nav-links > a:hover > i {
   color: var(--sidebar-background);
 }
 
+.nav-links > button:hover > i {
+  color: var(--sidebar-background);
+}
+
 .nav-links > a:hover > .text {
+  color: var(--sidebar-background);
+  font-weight: 400;
+}
+
+.nav-links > button:hover > .text {
   color: var(--sidebar-background);
   font-weight: 400;
 }
@@ -242,16 +259,16 @@ main.closed {
 
 .my-buttons {
   font-family: var(--text-fonts);
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   text-decoration: none;
-  
+
   padding: 10px 15px;
-  
+
   background-color: transparent;
   border: 3px solid var(--main-color);
   border-radius: 5px;
   box-shadow: -2px 2px #111;
-  
+
   transition: var(--trans-01);
 }
 
@@ -267,7 +284,7 @@ main.closed {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  
+
   color: var(--off-text);
   font-family: var(--text-fonts);
   font-size: 20px;
@@ -292,7 +309,7 @@ main.closed {
 }
 
 .banner h1 {
-  overflow-wrap: break-word; 
+  overflow-wrap: break-word;
 }
 
 .banner .job-titles {
@@ -300,7 +317,7 @@ main.closed {
   flex-direction: column;
   gap: 0.3em;
   align-items: flex-start;
-  
+
   font-size: 22px;
   color: var(--off-text);
   margin-bottom: 1rem;
@@ -310,7 +327,7 @@ main.closed {
   display: flex;
   justify-content: start;
   align-items: center;
-  
+
   font-size: 1.3em;
   padding: 15px;
 }
@@ -322,7 +339,7 @@ main.closed {
 }
 
 .my-photo {
-  border-radius: 0.30rem;
+  border-radius: 0.3rem;
   box-shadow: 1px 2px 4px 3px rgba(11, 11, 11, 0.5);
 }
 
@@ -358,7 +375,8 @@ main.closed {
   font-weight: 400;
 }
 
-.bars > label, .progress {
+.bars > label,
+.progress {
   margin-bottom: 1rem;
 }
 
@@ -381,12 +399,21 @@ main.closed {
   white-space: nowrap;
   background-color: var(--main-color);
   border-radius: 0.25rem;
-  box-shadow: 1px 1px 2px 1px rgba( 17, 17, 17, 0.8 );
+  box-shadow: 1px 1px 2px 1px rgba(17, 17, 17, 0.8);
   transition: width 0.6s ease;
 }
 
 .progress-bar-striped {
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
   background-size: 1rem 1rem;
 }
 
@@ -434,7 +461,7 @@ main.closed {
 .contacts-content .text {
   grid-column-start: span 2;
   align-self: center;
-  
+
   margin-bottom: 1rem;
 }
 
@@ -454,7 +481,8 @@ i:active {
 
 /* Media Queries */
 @media only screen and (min-width: 401px) and (max-width: 1100px) {
-  .about-content, .skills-content {
+  .about-content,
+  .skills-content {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -464,7 +492,8 @@ i:active {
 @media only screen and (max-width: 400px) {
   main {
     margin-left: 2rem;
-  } main.closed {
+  }
+  main.closed {
     margin-left: 2rem;
   }
 
@@ -480,7 +509,8 @@ i:active {
 
   .sidebar {
     width: 100vw;
-  } .sidebar.closed {
+  }
+  .sidebar.closed {
     width: 70px;
   }
 
@@ -501,5 +531,4 @@ i:active {
   .banner .job-titles {
     font-size: 18px;
   }
-
 }
