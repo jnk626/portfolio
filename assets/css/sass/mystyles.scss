@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* My colors */
+$yellow: #FACC15;
+$grey-dark: #222731;
+$grey: #2A303C;
+$beige: #B3AA99;
+
+/* Bulma's Global variables */
+$family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont,
+"Segoe UI", "Roboto", "Oxygen",
+"Ubuntu", "Cantarell", "Fira Sans",
+"Droid Sans", "Helvetica Neue", sans-serif;
+$primary: $yellow;
+$has-text-primary: $primary;
+
+/* Card styling */
+$card-color: $primary;
+$card-background-color: $grey;
+
+/* Footer styling */
+$footer-background-color: $grey-dark;
+$footer-padding: 2rem 4rem;
+
+
+/* Necessary components */
+@import "../mybulma/node_modules/bulma/sass/helpers/color.sass";
+@import "../mybulma/node_modules/bulma/sass/components/card.sass";
+@import "../mybulma/node_modules/bulma/sass/layout/footer.sass";
+
+
+
