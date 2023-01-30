@@ -323,7 +323,7 @@ main.closed {
   margin-bottom: 1rem;
 }
 
-.job-titles:nth-last-child() {
+.job-titles span:last-child {
   font-weight: 500;
   color: var(--main-color);
 }
