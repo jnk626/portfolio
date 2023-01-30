@@ -29,7 +29,11 @@
       rel="stylesheet"
     />
     <title>Gabriele Rigano - Portfolio</title>
-    <link rel="shortcut icon" href="img/logo-vector.svg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo-vector.svg"
+      type="image/x-icon"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </head>
 
@@ -37,7 +41,7 @@
     <nav id="sidebar" class="sidebar">
       <header>
         <div id="logo-text" class="logo-text">
-          <img src="img/logo-vector.svg" alt="logo" class="logo" />
+          <img src="./assets/img/logo-vector.svg" alt="logo" class="logo" />
           <span class="my-titles name">Gabriele Rigano</span>
         </div>
       </header>
@@ -99,7 +103,7 @@
         <div class="section-content about-content">
           <figure class="image is-square">
             <img
-              src="img/propic.jpg"
+              src="./assets/img/propic.jpg"
               alt="A photo of me, Gabriele"
               class="my-photo"
             />
@@ -318,7 +322,7 @@
             <div class="card-image">
               <figure class="image is-16by9">
                 <img
-                  src="img/razzanelli-homepage-screenshot.png"
+                  src="./assets/img/razzanelli-homepage-screenshot.png"
                   alt="Placeholder image"
                   loading="lazy"
                 />
@@ -362,7 +366,7 @@
             <div class="card-image">
               <figure class="image is-16by9">
                 <img
-                  src="img/ducale-homepage-screenshot.png"
+                  src="./assets/img/ducale-homepage-screenshot.png"
                   alt="ducale-arredamenti-site-screenshot"
                 />
               </figure>
@@ -403,7 +407,7 @@
             <div class="card-image">
               <figure class="image is-16by9">
                 <img
-                  src="img/totem-homepage-screenshot.png"
+                  src="./assets/img/totem-homepage-screenshot.png"
                   alt="Placeholder image"
                   loading="lazy"
                 />
@@ -457,6 +461,8 @@
                   type="text"
                   name="user_name"
                   placeholder="Il tuo nome"
+                  required
+                  aria-required="true"
                 />
                 <span class="icon is-small is-left">
                   <i class="bx bxs-user"></i>
@@ -472,6 +478,8 @@
                   type="email"
                   name="user_email"
                   placeholder="Email"
+                  required
+                  aria-required="true"
                 />
                 <span class="icon is-small is-left">
                   <i class="bx bxs-envelope"></i>

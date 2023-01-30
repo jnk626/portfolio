@@ -1,4 +1,4 @@
 *.DS_Store
 /.vscode/*
-css/mybulma/*
-css/sass/*
+assets/css/mybulma/
+assets/css/sass/
